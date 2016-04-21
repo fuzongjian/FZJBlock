@@ -32,6 +32,7 @@ typedef void(^myblock) (id data);
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self blockStudy];
     
     self.title = @"第一个界面";
     
@@ -55,9 +56,50 @@ typedef void(^myblock) (id data);
     
 }
 
-
-
-
+#pragma mark --- block的一般使用
+- (void)blockStudy{
+    [self blockStudy_first];
+}
+- (void)blockStudy_first{
+    
+    int(^returnBlock)(int,int) = ^(int a,int b){
+        return a+b;
+    };
+     NSLog(@"first===%d",returnBlock(5,6));
+    
+    
+    void(^returnSecond)(int,int) = ^(int a,int b){
+         NSLog(@"second===%d",a+b);
+    };
+    returnSecond(7,8);
+    
+    
+    void(^returnThird)(void) = ^{
+        NSLog(@"third");
+    };
+    returnThird();
+    
+    __block int a = 10;
+    int b = 39;
+    void(^returnForth)(void) = ^{
+        a = 324;
+         NSLog(@"%d---%d",a,b);
+    };
+    returnForth();
+    
+    [self gotowork:^{
+        NSLog(@"gotowork");
+    }];
+    
+}
+- (void)gotowork:(void(^)())dosomething{
+    NSLog(@"getup");
+    NSLog(@"wash");
+    if (dosomething) {
+        dosomething();
+    }
+    NSLog(@"workoff");
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
