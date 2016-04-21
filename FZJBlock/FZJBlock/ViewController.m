@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "secondViewController.h"
-
+typedef int(^returnValue)(int,int);
 typedef void(^myblock) (id data);
 @interface ViewController ()
 
@@ -61,6 +61,12 @@ typedef void(^myblock) (id data);
     [self blockStudy_first];
 }
 - (void)blockStudy_first{
+    
+    
+    returnValue  value = ^(int a,int b){
+        return a + b;
+    };
+     NSLog(@"sixth===%d",value(4755,4445));
     
     int(^returnBlock)(int,int) = ^(int a,int b){
         return a+b;
