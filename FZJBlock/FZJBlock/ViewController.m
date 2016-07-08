@@ -32,7 +32,7 @@ typedef void(^myblock) (id data);
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self blockStudy];
+//    [self blockStudy];
     
     self.title = @"第一个界面";
     

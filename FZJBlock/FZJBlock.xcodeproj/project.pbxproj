@@ -16,6 +16,7 @@
 		3A7895571C537F8000074EC6 /* secondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7895511C537F8000074EC6 /* secondViewController.m */; };
 		3A7895581C537F8000074EC6 /* thirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7895531C537F8000074EC6 /* thirdViewController.m */; };
 		3A7895591C537F8000074EC6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7895551C537F8000074EC6 /* ViewController.m */; };
+		7403493A1D2F3A6F00DCD069 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 740349391D2F3A6F00DCD069 /* NextViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		3A7895531C537F8000074EC6 /* thirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = thirdViewController.m; sourceTree = "<group>"; };
 		3A7895541C537F8000074EC6 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3A7895551C537F8000074EC6 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		740349381D2F3A6F00DCD069 /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
+		740349391D2F3A6F00DCD069 /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,8 @@
 				3A7895511C537F8000074EC6 /* secondViewController.m */,
 				3A7895521C537F8000074EC6 /* thirdViewController.h */,
 				3A7895531C537F8000074EC6 /* thirdViewController.m */,
+				740349381D2F3A6F00DCD069 /* NextViewController.h */,
+				740349391D2F3A6F00DCD069 /* NextViewController.m */,
 				3A7895541C537F8000074EC6 /* ViewController.h */,
 				3A7895551C537F8000074EC6 /* ViewController.m */,
 				3A7895401C537F2400074EC6 /* Main.storyboard */,
@@ -168,6 +173,7 @@
 				3A7895571C537F8000074EC6 /* secondViewController.m in Sources */,
 				3A78953C1C537F2400074EC6 /* AppDelegate.m in Sources */,
 				3A7895561C537F8000074EC6 /* forthViewController.m in Sources */,
+				7403493A1D2F3A6F00DCD069 /* NextViewController.m in Sources */,
 				3A7895391C537F2400074EC6 /* main.m in Sources */,
 				3A7895581C537F8000074EC6 /* thirdViewController.m in Sources */,
 			);
@@ -318,6 +324,7 @@
 				3A78954D1C537F2400074EC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
